@@ -1,9 +1,9 @@
 import java.rmi.*;
 import java.util.ArrayList;
 
-public interface SurveyServer {
+public interface SurveyServer extends Remote{
 
-    ArrayList<QuestionnaireSummary> downloadQuestionnaireSummary() throws RemoteException;
+    QuestionnaireSummary downloadQuestionnaireSummary() throws RemoteException;
 
     Questionnaire downloadQuestionnaire(int questionnaireId) throws  RemoteException;
 
