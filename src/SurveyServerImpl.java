@@ -17,7 +17,7 @@ public class SurveyServerImpl implements SurveyServer{
 
     public Questionnaire downloadQuestionnaire(int questionnaireId) throws  RemoteException{
 
-        Questionnaire questionnaire = new QuestionnaireImpl(questionnaireId);
+        Questionnaire questionnaire = new QuestionnaireImpl(questionnaireId, "Test");
 
         return questionnaire;
     }
