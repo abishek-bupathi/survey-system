@@ -1,17 +1,19 @@
+import java.util.ArrayList;
+
 public class QuestionnaireImpl implements Questionnaire{
 
     String name;
     String purpose;
     int id;
     int completedInstances;
-    Question[] questions;
+    ArrayList<Question> questions;
 
     public QuestionnaireImpl(int id, String name){
 
         this.name = name;
         purpose = "";
         this.id = id;
-        this.questions = new Question[]{};
+        this.questions = new ArrayList<>();
         this.completedInstances = 0;
 
     }
@@ -49,11 +51,11 @@ public class QuestionnaireImpl implements Questionnaire{
         return completedInstances;
     }
 
-    public void addQuestions(Question[] questions){
+    public void addQuestions(ArrayList<Question> questions){
         this.questions = questions;
     }
 
-    public Question[] getQuestions(){
+    public ArrayList<Question> getQuestions(){
         return questions;
     }
 

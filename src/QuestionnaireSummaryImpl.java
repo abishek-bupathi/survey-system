@@ -1,3 +1,5 @@
+import java.io.*;
+
 public class QuestionnaireSummaryImpl implements QuestionnaireSummary{
 
     String summary;

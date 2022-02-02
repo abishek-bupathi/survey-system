@@ -5,7 +5,9 @@ public class QuestionImpl implements Question{
 
     public QuestionImpl(String question, String[] answers){
         this.question = question;
-        System.arraycopy(answers, 0, this.answers[1], 0, 4);
+        for(int i = 0; i < 4; i++) {
+            this.answers[i][1] = answers[i];
+        }
     }
 
     public void setQuestion(String question){
@@ -13,7 +15,17 @@ public class QuestionImpl implements Question{
     }
 
     public void setAnswers(String[] answers){
-        System.arraycopy(answers, 0, this.answers[1], 0, 4);
+        for(int i = 0; i < 4; i++) {
+            this.answers[i][1] = answers[i];
+        }
+    }
+
+    public String[] getAnsOptions() {
+        String[] options = new String[4];
+        for(int i = 0; i < 4; i++){
+            options[i] = answers[i][1];
+        }
+        return options;
     }
 
     public void selectAnswer(int option){

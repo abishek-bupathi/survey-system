@@ -3,6 +3,7 @@ import java.util.ArrayList;
 
 public interface SurveyServer extends Remote{
 
+    String test() throws RemoteException;
     ArrayList<QuestionnaireSummary> downloadQuestionnaireSummary() throws RemoteException;
 
     Questionnaire downloadQuestionnaire(int questionnaireId) throws  RemoteException;

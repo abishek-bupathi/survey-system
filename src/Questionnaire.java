@@ -1,4 +1,7 @@
-public interface Questionnaire {
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public interface Questionnaire extends Serializable{
 
     void setName(String name);
     void setId(int id);
@@ -8,7 +11,7 @@ public interface Questionnaire {
     String getName();
     String getPurpose();
     int getNoOfCompletedInstances();
-    void addQuestions(Question[] questions);
-    Question[] getQuestions();
+    void addQuestions(ArrayList<Question> questions);
+    ArrayList<Question>  getQuestions();
 
 }

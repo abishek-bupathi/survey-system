@@ -1,0 +1,4 @@
+grant codeBase "file:/D:/CODING/Java/Survey-System/src" {
+    permission java.security.AllPermission;
+};
+
