@@ -86,10 +86,12 @@ public class SurveyServerImpl implements SurveyServer{
 
         questionnaire2 = new QuestionnaireImpl(122, "Personnel Questions");
         questionnaire2.setPurpose("To know about the client's mood");
+        questionnaire2.addQuestions(questionSet2);
         questionnaires.add(questionnaire2);
 
         questionnaire3 = new QuestionnaireImpl(123, "Personnel Questions");
         questionnaire3.setPurpose("To know about the client's mood");
+        questionnaire3.addQuestions(questionSet3);
         questionnaires.add(questionnaire3);
 
     }

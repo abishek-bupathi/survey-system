@@ -1,1 +1,1 @@
-java -cp D:/CODING/Java/Survey-System/src -Djava.rmi.server.codebase=file:/D:/CODING/Java/Survey-System/src/ -Djava.security.policy=server-windows.policy SurveyClient get_questionnaire 121
+java -cp D:/CODING/Java/Survey-System/src -Djava.rmi.server.codebase=file:/D:/CODING/Java/Survey-System/src/ -Djava.security.policy=server-windows.policy SurveyClient %1 %2

@@ -28,8 +28,13 @@ public class QuestionImpl implements Question{
         return options;
     }
 
-    public void selectAnswer(int option){
-        answers[0][option - 1] = "y";
+    public int selectAnswer(int option){
+        if(option < 5){
+            answers[option - 1][0] = "y";
+            return 1;
+        }else{
+            return 0;
+        }
     }
 
     public String getQuestion(){
@@ -40,8 +45,8 @@ public class QuestionImpl implements Question{
         String selectedAns = "None";
 
         for(int i = 0; i < 4; i++){
-            if(answers[0][i].compareTo("y") > 0){
-                selectedAns = answers[1][i];
+            if(answers[i][0].compareTo("y") > 0){
+                selectedAns = answers[i][1];
             }
         }
 
