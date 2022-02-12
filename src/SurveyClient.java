@@ -24,7 +24,7 @@ public class SurveyClient {
                 System.out.println("1. View available questionnaire summaries");
                 System.out.println("2. Answer and Submit Questionnaire");
                 System.out.println("3. Exit");
-                System.out.print("Enter your choice (1 or 2): ");
+                System.out.print("Enter your choice (1 - 3): ");
                 action_choice = obj.nextInt();
 
                 // Checking is get_summaries is passed as the 1st argument in the command line
