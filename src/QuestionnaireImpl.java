@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class QuestionnaireImpl implements Questionnaire{
+public class QuestionnaireImpl implements Questionnaire {
 
     String name;
     String purpose;
@@ -8,7 +8,7 @@ public class QuestionnaireImpl implements Questionnaire{
     int completedInstances;
     ArrayList<Question> questions;
 
-    public QuestionnaireImpl(int id, String name){
+    public QuestionnaireImpl(int id, String name) {
 
         this.name = name;
         purpose = "";
@@ -18,32 +18,32 @@ public class QuestionnaireImpl implements Questionnaire{
 
     }
 
-    public void setName(String name){
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setId(int id){
+    public void setId(int id) {
         this.id = id;
     }
 
-    public void setPurpose(String purpose){
+    public void setPurpose(String purpose) {
         this.purpose = purpose;
     }
 
+    // Each time the questionnaire is submitted, the value of completedInstances will increment by 1
     public void setCompleted() {
         completedInstances += 1;
     }
 
-
-    public int getId(){
+    public int getId() {
         return id;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public String getPurpose(){
+    public String getPurpose() {
         return purpose;
     }
 
@@ -51,11 +51,11 @@ public class QuestionnaireImpl implements Questionnaire{
         return completedInstances;
     }
 
-    public void addQuestions(ArrayList<Question> questions){
+    public void addQuestions(ArrayList<Question> questions) {
         this.questions = questions;
     }
 
-    public ArrayList<Question> getQuestions(){
+    public ArrayList<Question> getQuestions() {
         return questions;
     }
 

@@ -1,16 +1,15 @@
-import java.io.*;
 
-public class QuestionnaireSummaryImpl implements QuestionnaireSummary{
+public class QuestionnaireSummaryImpl implements QuestionnaireSummary {
 
     String summary;
     Questionnaire questionnaire;
 
-    QuestionnaireSummaryImpl(Questionnaire questionnaire){
+    QuestionnaireSummaryImpl(Questionnaire questionnaire) {
         this.summary = "";
         this.questionnaire = questionnaire;
     }
 
-    public String getSummary(){
+    public String getSummary() {
 
         summary += "ID: " + questionnaire.getId() + "\n";
         summary += "Name: " + questionnaire.getName() + "\n";
@@ -18,6 +17,9 @@ public class QuestionnaireSummaryImpl implements QuestionnaireSummary{
         summary += "No. of completed Instances: " + questionnaire.getNoOfCompletedInstances();
 
         return summary;
+    }
 
+    public int getId() {
+        return questionnaire.getId();
     }
 }
